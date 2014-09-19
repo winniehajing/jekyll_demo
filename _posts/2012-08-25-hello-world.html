@@ -3,8 +3,31 @@ layout: default
 title: 你好，世界
 ---
 
-<h2>{{ page.title }}</h2>
-
-<p>我的第一篇文章</p>
-
-<p>{{ page.date | date_to_string }}</p>
+<div class="content">
+      <div class="sidebar">
+        <a>
+          <img src="images/logo.png"></img>
+        </a>
+        <p>
+          want to contact me?
+          <br>
+          <strong>jingxiang70939@gmail.com</strong>
+        </p>
+      </div>
+      <div class="post">
+        <b class="author">
+          <img src="images/author.png"></img>
+        </b>
+        <h2 class="title">
+          <a>{{ page.title }}</a>
+        </h2>
+        <div>我的第一篇文章</div>
+        <a class="meta">{{ page.date | date_to_string }}</a>
+      </div>  
+    </div>
+    <div class="copyright">
+      <div class="nav">
+        <a class="button">Next Page</a>
+      </div>
+      <p>© 2012–2014 </p>
+    </div>

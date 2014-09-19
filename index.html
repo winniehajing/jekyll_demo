@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 我的Blog
+title: Jing Xiang's Blog ←_←
 ---
 
 <h2>{{ page.title }}</h2>
@@ -12,3 +12,48 @@ title: 我的Blog
       <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
 </ul>
+    <header class="header">
+      <a>Jing Xiang's Blog ←_← </a>
+    </header>
+  	<div class="content">
+      <div class="sidebar">
+        <a>
+          <img src="../images/logo.png"></img>
+        </a>
+        <p>
+          "want to contact me"
+          <br>
+          <strong>jingxiang70939@gmail.com</strong>
+        </p>
+      </div>
+      {% for post in site.posts %}
+      <div class="post">
+        <b class="author">
+          <img src="../images/author.png"></img>
+        </b>
+        <h2 class="title" >
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <div>{{ post.content }}
+        </div>
+        <a class="meta">{{ post.date | date_to_string }}</a>
+      </div>
+      {% endfor %}
+      <div class="post">
+        <b class="author">
+          <img src="../images/author.png"></img>
+        </b>
+        <h2 class="title">
+          <a>fafsafafafafsafafaf</a>
+        </h2>
+        <div>{{ content }} a leading web consultancy based in Orlando, FL, building digital products for the likes of GitHub, Google, O’Reilly, and Cisco. We’ve also built Code School, one of the most popular online educational platforms, teaching web technologies in the comfort of your browser. We help hundreds of thousands of people learn by doing, and partner with clients to solve problems through innovation and technology—we’re looking for a 
+        </div>
+        <a class="meta">14.08.12</a>
+      </div>  
+    </div>
+    <div class="copyright">
+      <div class="nav">
+        <a class="button">Next Page</a>
+      </div>
+      <p>© 2012–2014 </p>
+    </div>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -24,7 +24,17 @@
           <strong>jingxiang70939@gmail.com</strong>
         </p>
       </div>
-    {{ content }} 
+      <div class="post">
+        <b class="author">
+          <img src="images/author.png"></img>
+        </b>
+        <h2 class="title" >
+          <a>{{ page.title }}</a>
+        </h2>
+        <div>{{ page.content }}
+        </div>
+        <a class="meta">{{ page.date | date_to_string }}</a>
+      </div>
     </div>
     <div class="copyright">
       <div class="nav">
@@ -34,4 +44,3 @@
     </div>
   </body>
 </html>
-
